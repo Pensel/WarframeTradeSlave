@@ -2,7 +2,7 @@ import subprocess
 from pyautogui import press, typewrite, hotkey, click
 from time import sleep
 import config
-import WindowMgr
+#import WindowMgr
 
 
 def wrapper(mit, ohne, before, after, seperator, platinum):
@@ -29,11 +29,11 @@ def withoutPrice(l):
 def sell(text):
     return subprocess.check_call(text, shell=True)
 
-def swapWindow():
-    w = WindowMgr.WindowMgr()
-    w.find_window_wildcard("WARFRAME")
-    w.set_foreground()
-    click()
+##def swapWindow():
+##    w = WindowMgr.WindowMgr()
+##    w.find_window_wildcard("WARFRAME")
+##    w.set_foreground()
+##    click()
     
 
 def autoPrint(s=0):
